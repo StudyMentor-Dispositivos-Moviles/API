@@ -215,10 +215,17 @@ const tutors = [
     }
 ];
 
+// Ruta principal
+app.get('/', (req, res) => {
+    res.send('API de Tutores');
+});
+
+// Ruta para obtener la lista de tutores
 app.get('/api/tutors', (req, res) => {
     res.json(tutors);
 });
 
+// Iniciar el servidor
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

@@ -214,7 +214,6 @@ const tutors = [
         "Photo": "https://example.com/photos/andrea_aguilar.jpg"
     }
 ];
-
 // Ruta principal
 app.get('/', (req, res) => {
     res.send('API de Tutores');

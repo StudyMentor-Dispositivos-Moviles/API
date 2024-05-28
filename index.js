@@ -216,7 +216,7 @@ const tutors = [
 ];
 // Ruta principal
 app.get('/', (req, res) => {
-    res.send('API de Tutores');
+    res.json(tutors);
 });
 
 // Ruta para obtener la lista de tutores
